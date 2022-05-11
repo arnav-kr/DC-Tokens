@@ -2,9 +2,9 @@
   "name": "dc-tokens",
   "version": "1.0.0",
   "description": "Discord like tokens for Authentication",
-  "main": "lib/index.js",
-  "module": "esm/index.js",
-  "types": "lib/index.d.js",
+  "main": "dist/lib/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/lib/index.d.js",
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "tsc -p tsconfig.cjs.json",
@@ -18,8 +18,7 @@
   },
   "files": [
     "lib",
-    "esm",
-    "umd"
+    "esm"
   ],
   "keywords": [
     "dc-tokens",
@@ -51,10 +50,5 @@
     "typescript": "^4.6.4",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
-  },
-  "dependencies": {
-    "buffer": "^6.0.3",
-    "crypto-browserify": "^3.12.0",
-    "stream-browserify": "^3.0.0"
   }
 }
