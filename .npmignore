@@ -1,0 +1,16 @@
+# Files
+LICENSE
+README.md
+
+# Config Files
+eslintrc.js
+tsconfig*.json
+jest.config.ts
+webpack.config.json
+
+# Folders
+.github/
+images/
+tests/
+dist/
+src/
