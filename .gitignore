@@ -59,3 +59,6 @@ typings/
 
 # build files
 /dist/
+
+# No package for web 😐
+@web/

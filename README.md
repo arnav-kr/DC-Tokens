@@ -40,6 +40,7 @@ pnpm install dc-tokens
 
 ## Usage
 
+> **NOTE:** For Node.js only (not supported in browsers)
 
 ### DCT.sign(payload, privateKey, [options, callback])
 
