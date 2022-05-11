@@ -1,6 +1,6 @@
 {
   "name": "dc-tokens",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Discord like tokens for Authentication",
   "main": "dist/lib/index.js",
   "module": "dist/esm/index.js",
