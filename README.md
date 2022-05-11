@@ -1,6 +1,6 @@
 # DC Tokens
 
-<p align="center"><img src="https://raw.githubusercontent.com/arnav-kr/DC-Tokens/main/images/DCT.svg" width="100%" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arnav-kr/DC-Tokens/main/images/DCT.svg" width="200px" /></p>
 
 ![npm version](https://img.shields.io/npm/v/dc-tokens.svg?maxAge=3600)
 ![npm downloads](https://img.shields.io/npm/dt/dc-tokens.svg?maxAge=3600)
