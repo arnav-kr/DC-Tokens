@@ -41,7 +41,7 @@ pnpm install dc-tokens
 ## Usage
 
 
-#### DCT.sign(payload, privateKey, [options, callback])
+### DCT.sign(payload, privateKey, [options, callback])
 
 If a callback is supplied, the callback is called with the `err` and the `Token`.
 
@@ -78,7 +78,7 @@ DCT.sign("Cute little cats", "secret", { }, (err, token) => {
 });
 ```
 
-#### DCT.verify(token, privateKey, [options, callback])
+### DCT.verify(token, privateKey, [options, callback])
 
 If a callback is supplied, the callback is called with the `err` and the `TokenObject`.
 
