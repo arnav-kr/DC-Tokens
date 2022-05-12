@@ -48,7 +48,7 @@ If a callback is supplied, the callback is called with the `err` and the `Token`
 
 Else returns the `DCToken` as string
 
-`payload` could should be string.
+`payload` should be string.
 
 `privateKey` is a string or buffer.
 
