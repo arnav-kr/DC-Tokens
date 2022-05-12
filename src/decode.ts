@@ -2,7 +2,7 @@ import { DCTokenError } from "./Errors/DCTokenError";
 import { DCTError } from "./interfaces/Errors";
 import { Token } from "./interfaces/Token";
 import CustomTimestamp from "./utils/customTimestamp";
-import { createHmac, scryptSync } from "crypto";
+import { createHmac, scryptSync, Hmac } from "crypto";
 import { VerifyOptions } from "./interfaces/verifyOptions";
 
 export function decode(
@@ -46,8 +46,12 @@ export function decode(
     throw new DCTokenError(DCTError.TOKEN_MALFORMED)
   }
 
+  let payloads: string = payload + '.' + timestamp;
+
   try {
-    authedSignature = createHmac('sha-256', scryptSync(secret, "", 32)).digest("base64url");
+    let hmacsha256: Hmac = createHmac('sha-256', scryptSync(secret, "", 32));
+    hmacsha256.update(splited.slice(0, 2).join("."));
+    authedSignature = hmacsha256.digest("base64url")
   }
   catch (err) {
     throw new DCTokenError(DCTError.INVALID_SIGNATURE);
