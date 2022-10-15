@@ -39,10 +39,8 @@ body:
     description: |
       examples:
         - **OS**: Windows 11 Version 21H2 (Build 22000.527)
-        - **Browser**: Google Chrome 99.0.4844.51 (Official Build) (64-bit) (cohort: Stable) 
     value: |
         - OS:
-        - Browser:
     render: markdown
   validations:
     required: false
