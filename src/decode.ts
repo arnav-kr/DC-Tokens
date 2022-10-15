@@ -49,7 +49,7 @@ export function decode(
   let payloads: string = payload + '.' + timestamp;
 
   try {
-    let hmacsha256: Hmac = createHmac('sha-256', scryptSync(secret, "", 32));
+    let hmacsha256: Hmac = createHmac('sha256', scryptSync(secret, "", 32));
     hmacsha256.update(splited.slice(0, 2).join("."));
     authedSignature = hmacsha256.digest("base64url")
   }

@@ -26,7 +26,7 @@ export function sign(
     let payloads: string =
       Buffer.from(payload, "utf-8").toString("base64url") + '.' + customTimestamp.create(timestamp);
 
-    let signature: Hmac = createHmac('sha-256', scryptSync(secret, "", 32));
+    let signature: Hmac = createHmac('sha256', scryptSync(secret, "", 32));
     signature.update(payloads);
     let token: string = payloads + '.' + signature.digest("base64url");
 
