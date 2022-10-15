@@ -11,6 +11,8 @@
 
 DCTokens are the discord like tokens that can be used for authentiction in your website, api, or anything you want (you can even trick people to think its an actual discord token 😉).
 
+![Token Structure](https://raw.githubusercontent.com/arnav-kr/DC-Tokens/main/images/TokenStructure.png)
+
 It Uses HMAC with SHA-256 to sign the tokens.
 
 ## Features
@@ -37,6 +39,8 @@ yarn add dc-tokens
 ```bash
 pnpm install dc-tokens
 ```
+
+[**CHANGELOG**](https://github.com/arnav-kr/DC-Tokens/blob/main/CHANGELOG.md)
 
 ## Usage
 
