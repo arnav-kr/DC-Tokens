@@ -11,7 +11,7 @@
 
 DCTokens are the discord like tokens that can be used for authentiction in your website, api, or anything you want (you can even trick people to think its an actual discord token 😉).
 
-![Token Structure](https://raw.githubusercontent.com/arnav-kr/DC-Tokens/main/images/TokenStructure.png)
+![Token Structure](https://raw.githubusercontent.com/arnav-kr/DC-Tokens/main/images/TokenStructure.svg)
 
 It Uses HMAC with SHA-256 to sign the tokens.
 
